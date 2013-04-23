@@ -57,3 +57,4 @@ def download_census_pvs_files():
 
 download_census_pvs_files()
 download_census_shapefiles('zcta', 'http://www2.census.gov/geo/tiger/TIGER2012/ZCTA5/tl_2012_us_zcta510.zip')
+download_census_shapefiles('state', 'http://www2.census.gov/geo/tiger/TIGER2012/STATE/tl_2012_us_state.zip')
