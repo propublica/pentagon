@@ -40,7 +40,7 @@ def download_census_pvs_files():
         os.system('rm  *tracts* *ait* *necta* *elsd* *unsd* *uac* *mcd* *county* *place* *aia* *tbg* *scsd* *state* *tct* *puma* *hhl* *cbsa* *anrc* *cdp*')
 
     # extract the types we care about
-    for type in ('cd', 'sldl', 'sldu'):
+    for type in ('cd', 'sldl', 'sldu', 'state'):
         # create type dir
         dir = '../shapefiles/{0}'.format(type)
         if not os.path.exists(dir):
@@ -57,3 +57,4 @@ def download_census_pvs_files():
 
 download_census_pvs_files()
 download_census_shapefiles('zcta', 'http://www2.census.gov/geo/tiger/TIGER2012/ZCTA5/tl_2012_us_zcta510.zip')
+download_census_shapefiles('state', 'http://www2.census.gov/geo/tiger/TIGER2012/STATE/tl_2012_us_state.zip')

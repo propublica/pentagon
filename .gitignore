@@ -4,6 +4,7 @@ shapefiles/sldu
 shapefiles/sldl
 shapefiles/cd
 shapefiles/zcta
+shapefiles/state
 *.dbf
 *.shp
 *.shx

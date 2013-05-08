@@ -92,3 +92,19 @@ boundaries.register('sldu',
                     data_url=CENSUS_URL,
                     notes='',
                    )
+
+# states
+boundaries.register('state',
+                    singular='state',
+                    domain='United States',
+                    file='state/',
+                    last_updated=date(2012, 8, 17),
+                    name_func=boundaries.attr('NAME'),
+                    slug_func=boundaries.attr('STUSPS'),
+                    id_func=index_namer('state-'),
+                    authority='US Census Bureau',
+                    source_url='http://www.census.gov/cgi-bin/geo/shapefiles2012/main',
+                    licence_url='http://www.census.gov/geo/www/tiger/tgrshp2012/tgrshp2012.html',
+                    data_url='ftp://ftp2.census.gov/geo/tiger/TIGER2012/STATE/tl_2012_us_state.zip',
+                    notes='',
+                   )
