@@ -24,10 +24,10 @@ def tiger_namer(feature):
 
         return "%s %s" % (state_abbrev, feature.get('NAME'))
     else:
-        fips_code = feature.get('STATEFP00')
+        fips_code = feature.get('STATEFP10')
         state_abbrev = state_fips[fips_code].upper()
 
-        return "%s %s" % (state_abbrev, feature.get('SLDUST00'))
+        return "%s %s" % (state_abbrev, feature.get('SLDUST10'))
 
 class index_namer(object):
     def __init__(self, prefix):
